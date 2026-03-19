@@ -61,40 +61,6 @@ npm run preview
 * Production build will be in `/dist`.
 
 
-
-## 📁 Project Structure
-
-.
-├── public/                # Static assets (images, icons, etc.)
-├── src/                   # Source code
-│   ├── data/              # Data sources and services
-│   ├── pages/             # Route pages and view components
-│   ├── styles/            # Global styles and CSS utilities
-│   ├── App.tsx            # App root + route layout
-│   ├── main.tsx           # Vite entry point
-│   └── routes.tsx         # React Router routes config
-├── index.html             # Vite HTML template
-├── package.json           # npm metadata + scripts
-├── tailwind.config.js     # Tailwind configuration
-└── vite.config.ts         # Vite build/dev config
-
-
-## 🚀 Deployment
-
-This project is deployed via **Vercel**. Steps to deploy:
-
-1. Push your code to GitHub.
-2. Sign in to [Vercel](https://vercel.com/) and select **New Project → Import Git Repository**.
-3. Choose your repository (`gym-promo-website`) and branch (`master`).
-4. Set **Framework Preset** to **Vite**.
-5. Set **Build Command:** `npm run build`
-6. Set **Output Directory:** `dist`
-7. Click **Deploy** → your site is live!
-
-> Future pushes to `master` automatically trigger redeploys.
-
-
-
 ## 🧩 NPM Scripts
 
 * `npm run dev` – Runs Vite dev server with HMR
