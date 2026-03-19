@@ -1,68 +1,111 @@
 # Fitness Sports Center
 
-A premium, multi-page React application conceptualized for an elite gym and fitness facility. Built to be blazing fast with Vite, it features a highly dynamic, user-centric interface that seamlessly navigates across multiple highly-detailed landing pages representing different fitness plans, pricing models, and services.
+A premium, multi-page React application conceptualized for an elite gym and fitness facility. Built with **Vite** for blazing fast performance, it features a highly dynamic, user-centric interface across multiple landing pages representing fitness plans, services, and pricing models.
 
-### 🌐 Live Link
-*(Insert Production URL Here once deployed!)*
-- **Local Dev Server**:
 
----
+## 🌐 Live Demo
+[https://gym-promo-website.vercel.app/]
+
+**Local Dev Server:** [http://localhost:5173]
+
+
 
 ## 🛠 Tech Stack
 
-- **Framework**: React 18
-- **Routing**: React Router DOM (v6.15+) for internal SPA architecture.
-- **Build Tool**: Vite for incredibly fast Hot Module Replacement (HMR) and dev server.
-- **Styling**: Vanilla CSS injected dynamically. No external component libraries are used, ensuring a 100% custom, bespoke design focused on dynamic aesthetics (CSS Variables, Flexbox/Grid patterns).
-- **Tooling**: TypeScript config with strict settings, combined with standard JS/JSX page logic.
+- **Framework:** React 18  
+- **Routing:** React Router DOM (v6.15+)  
+- **Build Tool:** Vite  
+- **Styling:** Vanilla CSS with dynamic CSS variables, Flexbox/Grid patterns  
+- **Tooling:** TypeScript (strict settings) with standard JS/JSX  
 
----
 
-## ✨ Key Features & Capabilities
 
-- **Multi-Page Architecture**: 
-  - Comprehensive standalone routing covering: `/personal-training`, `/group-classes`, `/modern-equipment`, `/cardio-health`, and a dedicated `/pricing` page.
-- **Dark/Light Mode**:
-  - Global CSS context toggling implemented right in the navigation bar, switching fluidly between sleek dark backgrounds and accessible light palettes.
-- **Integrated Program Search**:
-  - A real-time keyword search bar mounted in the primary Navigation. Searches actively filter the "Programs" grid while instantly scrolling the user down to view the live results.
-- **Intersection Observer Animations**:
-  - Built-in `useInView` Custom Hooks trigger elegant fade-up CSS keyframe animations exclusively when elements scroll into the viewport.
-- **Simulated API Form Handling**:
-  - A robust "Contact Us" web form complete with field validation. On submit, it disables the UI to display a loading state, fires a `fetch` POST request to a standard mock JSON API (`jsonplaceholder`), and handles both network success and error status outputs.
-- **Anchor Smooth Scrolling**:
-  - Seamless layout jumping to internal anchors (`#hero`, `#about`, `#programs`, `#contact`) utilizing both direct clicks and React-Router's `useLocation().hash` hook.
+## ✨ Key Features
 
----
+- **Multi-Page Architecture:** `/personal-training`, `/group-classes`, `/modern-equipment`, `/cardio-health`, `/pricing`.  
+- **Dark/Light Mode:** Global toggle via navigation bar.  
+- **Integrated Program Search:** Real-time filtering with scroll-to results.  
+- **Intersection Observer Animations:** `useInView` custom hooks for elegant fade-up animations.  
+- **Simulated API Form Handling:** Contact form with validation, loading states, and fetch to mock API (`jsonplaceholder`).  
+- **Anchor Smooth Scrolling:** Seamless navigation to internal anchors.  
+
+
 
 ## ⚙️ Setup Instructions
 
-To get a local clone running on your machine:
-
 ### 1. Prerequisites
-Ensure you have [Node.js](https://nodejs.org/en/) installed securely (NPM comes mapped by default).
+Ensure [Node.js](https://nodejs.org/) is installed (includes NPM).  
 
 ### 2. Installation
-Clone this repository and verify you are in the project's root folder:
 ```bash
 git clone https://github.com/HimashaSawani/gym-promo-website
 cd gym-promo-website
-```
-
-Run basic NPM install to catch all `package.json` dependencies (Vite, React DOM, Router):
-```bash
 npm install
 ```
 
-### 3. Run Locally 
-To spin up the development environment, execute:
+### 3. Run Locally
+
 ```bash
 npm run dev
 ```
-Navigate to your provided localized host (typically `http://localhost:5173`) in your web browser. 
+
+Visit `http://localhost:5173` in your browser.
 
 ### 4. Build for Production
-To bundle a minified, lightweight build into a `/dist` folder for hosting via Vercel, Firebase, AWS, run:
+
 ```bash
 npm run build
-npm run preview  
+npm run preview
+```
+
+* Production build will be in `/dist`.
+
+
+
+## 📁 Project Structure
+
+.
+├── public/                # Static assets (images, icons, etc.)
+├── src/                   # Source code
+│   ├── data/              # Data sources and services
+│   ├── pages/             # Route pages and view components
+│   ├── styles/            # Global styles and CSS utilities
+│   ├── App.tsx            # App root + route layout
+│   ├── main.tsx           # Vite entry point
+│   └── routes.tsx         # React Router routes config
+├── index.html             # Vite HTML template
+├── package.json           # npm metadata + scripts
+├── tailwind.config.js     # Tailwind configuration
+└── vite.config.ts         # Vite build/dev config
+
+
+## 🚀 Deployment
+
+This project is deployed via **Vercel**. Steps to deploy:
+
+1. Push your code to GitHub.
+2. Sign in to [Vercel](https://vercel.com/) and select **New Project → Import Git Repository**.
+3. Choose your repository (`gym-promo-website`) and branch (`master`).
+4. Set **Framework Preset** to **Vite**.
+5. Set **Build Command:** `npm run build`
+6. Set **Output Directory:** `dist`
+7. Click **Deploy** → your site is live!
+
+> Future pushes to `master` automatically trigger redeploys.
+
+
+
+## 🧩 NPM Scripts
+
+* `npm run dev` – Runs Vite dev server with HMR
+* `npm run build` – Production build in `/dist`
+* `npm run preview` – Preview production build locally
+
+
+
+## 🤝 Contributing
+
+Issues, features, and pull requests are welcome. Feel free to contribute!
+
+
+
