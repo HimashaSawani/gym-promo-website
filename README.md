@@ -38,7 +38,7 @@ Ensure [Node.js](https://nodejs.org/) is installed (includes NPM).
 
 ### 2. Installation
 ```bash
-git clone https://github.com/HimashaSawani/gym-promo-website
+git clone https://github.com/your user name/gym-promo-website
 cd gym-promo-website
 npm install
 ```
